@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Online resume</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <img src="Sandy.jpeg" class="img">
+        <div class="content">
+             <h1>Sandeep Digpal</h1>
+            <p>Web developer, Computer programmer</p>
+            <button type="button" class="btn"><a href="SANDEEP_DIGPAL_resume2.docx" download="SANDEEP_DIGPAL_resume2.docx" style="color:rgb(0, 0, 0)">Resume</button></a>
+            <a href="#container" class="btn" style="color:rgb(0, 0, 0)"> Contact me </a>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column" style="background-color:#0055aa79">
+        <h2>About Me and Academic Honesty</h2>
+    <p align=left>
+        I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.
+    </p>
+        <br>
+        <p align=left>
+        Date: 14-08-2022    
+    </p>
+    </div>
+        <div class="column" style="background-color:#0055aa79">
+            <h2><p align= left> Basic Details1</p></h2>
+       <table> 
+           <tr align=left> <td><em>AGE:           </em> 19</td></tr>
+           <tr align=left> <td><em>EMAIL:         </em> sdigpal@myseneca.ca</td></tr>
+           <tr align=left> <td><em>LANGUAGE:      </em> English</td></tr>
+           <tr align=left> <td><em>CLASS SECTION: </em> NJJ</td></tr>
+           <tr align=left> <td><em>STUDENT ID:    </em> 126454214</td></tr>
+           <tr align=left> <td><em>INSTRUCTOR:    </em> Noman Atique</td></tr>
+       </table>
+       </div>
+    </div>
+       <br>
+       <h1 class="h1edu">Education </h1>
+       <div class="row2">
+           <div class="column2" style="background-color:#0055aa79">
+       <p>
+           2021 - 2023
+           <br>
+           <br>
+           Diploma in Computer Programming
+       </p>
+    </div>
+    <div class="column2" style="background-color:#0055aa79">
+       <p>
+           Computer Programmer
+           <br>
+           <br>
+           Seneca college
+           <br>
+           <br>
+           Under the supervision of professor Noman Atique in WEB 222
+       </p>
+    </div>
+    </div>
+    <div id="container">
+        <h1>Please fill up the contact information</h1>
+          <form action="https://httpbin.org/post" method="post">
+        
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Enter your first name..."required>
+        
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Enter your last name..."required>
+      
+            <label for="email">Email Address</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email here..."required>
+        
+             <label for="address">Address</label>
+             <input type="text" id="address" name="address" placeholder="Enter your address..."required> 
+      
+                
+             <label for="postalcode">Postal Code</label>
+             <input type="text" id="postalcode" name="postalcode" pattern="^[A-Za-z]\d[A-Za-z] ?\d[A-Za-z]\d$" placeholder="Enter your postal code here..."required> 
+      
+            <label for="city">City</label>
+      
+            <select id="city" name="city"required>
+              <option value="toronto">Toronto</option>
+              <option value="brampton">Brampton</option>
+              <option value="oakville">Oakville</option>
+              <option value="hamilton">Hamilton</option>
+              <option value="ottawa">Ottawa</option>
+              <option value="vaughan">Vaughan</option>
+             </select>
+      
+            <label for="status">Status</label><br>
+            <input type="radio" id="one" name="selection"required onclick=" checkButton()">
+            <label for="one"> Question</label>
+            <div class="radio_demo"></div>
+      
+            <input type="radio" id="two" name="selection"required onclick=" checkButton()">
+            <label for="two"> Comment</label>
+            <div class="radio_demo"></div>
+      
+            <input type="radio" id="three" name="selection"required onclick=" checkButton()">
+            <label for="three"> Hiring</label>
+            <div class="radio_demo">
+              <div id="reveal-if-active">
+                
+                </div>
+            </div>
+            <textarea id="submit" name="submit" placeholder="" style="height:200px"required></textarea>
+            
+            <input type="submit" value="Submit">
+        
+          </form>
+        </div>
+  </body>
+</html>
+
